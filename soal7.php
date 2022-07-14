@@ -5,10 +5,9 @@ function data($var){
            return($var);
         }
     }
-    $number = array(1,4,7,9,12);
 
-  	$datas =   print_r(array_filter(count($number),"data"));   
-
+  	$datas = array_filter([1,4,7,9,15],'data'); 
+  	echo count($datas);
 ?>
 
 
